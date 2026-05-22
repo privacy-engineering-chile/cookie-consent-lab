@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cookie-consent-lab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cookie-consent-cl@0.2.2/dist/cookie-consent-cl.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookie-consent-cl@0.2.0/dist/cookie-consent-cl.iife.js"></script>
+    <script type="module" src="/dist/src/lab-runtime.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="intro">
+        <p class="eyebrow">Privacy Engineering Chile</p>
+        <h1>cookie-consent-lab</h1>
+        <p>
+          Laboratorio local para probar cookie-consent-cl, vendors comunes, scripts propios,
+          cookies, storage, requests, dataLayer y Google Consent Mode.
+        </p>
+      </header>
+
+      <section class="lab-section" aria-labelledby="config-title">
+        <div class="section-heading">
+          <h2 id="config-title">Configuración de vendors</h2>
+          <p>
+            Ingresa IDs reales si quieres probarlos. El tráfico real solo se carga cuando activas el
+            opt-in explícito y otorgas consentimiento.
+          </p>
+        </div>
+        <form data-vendor-config-form></form>
+      </section>
+
+      <section class="lab-section" aria-labelledby="state-title">
+        <div class="section-heading">
+          <h2 id="state-title">Observabilidad</h2>
+          <p>Estado en tiempo real de cookies, scripts cargados y señales de consentimiento.</p>
+        </div>
+        <div data-lab-state></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "cookie-consent-lab",
+  "version": "0.1.0",
+  "description": "Laboratorio reproducible con Playwright para probar cookie-consent en vendors y escenarios de consentimiento.",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build && node dist/scripts/server.js",
+    "serve": "npm run build && node dist/scripts/server.js",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report reports/playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  }
+}
