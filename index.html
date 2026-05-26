@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>cookie-consent-lab</title>
+    <title>Cookie-consent Lab </title>
+    <link rel="icon" type="image/x-icon" href="/PRIVACY-ENGINEERING.png">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/cookie-consent-cl@0.2.2/dist/cookie-consent-cl.css"
@@ -23,6 +24,14 @@
         </p>
       </header>
 
+      <section class="lab-section" aria-labelledby="state-title">
+        <div class="section-heading">
+          <h2 id="state-title">Observabilidad</h2>
+          <p>Estado en tiempo real de cookies, scripts cargados y señales de consentimiento.</p>
+        </div>
+        <div data-lab-state></div>
+      </section>
+
       <section class="lab-section" aria-labelledby="config-title">
         <div class="section-heading">
           <h2 id="config-title">Configuración de vendors</h2>
@@ -32,14 +41,6 @@
           </p>
         </div>
         <form data-vendor-config-form></form>
-      </section>
-
-      <section class="lab-section" aria-labelledby="state-title">
-        <div class="section-heading">
-          <h2 id="state-title">Observabilidad</h2>
-          <p>Estado en tiempo real de cookies, scripts cargados y señales de consentimiento.</p>
-        </div>
-        <div data-lab-state></div>
       </section>
     </main>
   </body>
